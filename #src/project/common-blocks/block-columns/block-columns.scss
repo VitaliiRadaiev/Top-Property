@@ -1,0 +1,13 @@
+.block-columns {
+	&--3 {
+		margin-left: -16px !important; 
+		margin-right: -16px !important;
+		justify-content: center;
+
+		& .column {
+			//width: 33.333% !important;
+			padding: 0 16px;
+			margin-bottom: 32px;
+		}
+	}
+}

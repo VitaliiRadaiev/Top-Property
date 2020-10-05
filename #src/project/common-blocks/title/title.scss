@@ -1,0 +1,13 @@
+.title {
+	font-family: $mainFontFamily;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 51px;
+	color: #000000;
+
+	@media (max-width: $md3+px) {
+		font-size: 28px;
+		line-height: 37px;
+	}
+}

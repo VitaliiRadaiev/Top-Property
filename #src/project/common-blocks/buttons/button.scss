@@ -1,0 +1,35 @@
+.button {
+	font-family: $secondFontFamily;
+	font-size: 20px;
+	padding-right: 1.9em;
+	padding-left: 1.9em;
+	padding-bottom: calc(1.7em - 1px);
+	padding-top: calc(1.7em - 1px);
+	border-radius: 5px;
+	transition: all .2s ease;
+
+	@media (min-width: 992px) {
+		&:hover {
+			background-color: rgba(#000, 0.7) !important;
+		}
+	}
+
+	&.is-transparent {
+		background: transparent;
+		border: 2px solid #000;
+		color: #000;
+		padding-right: 1.5em;
+		padding-left: 1.5em;
+		padding-bottom: calc(1.7em - 2px);
+		padding-top: calc(1.7em - 2px);
+		transition: all .2s ease;
+
+		@media (min-width: 992px) {
+			&:hover {
+				background: #000 !important;
+				color: #fff;
+			}
+		}
+
+	}
+}

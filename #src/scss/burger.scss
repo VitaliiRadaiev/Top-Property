@@ -1,0 +1,54 @@
+.burger-wrap {
+	margin-left: 25px;
+	display: inline-block;
+	background-color: #283949;
+	border: 1px solid transparent;
+	border-radius: 4px;
+
+	& .burger {
+		width: 42px;
+		height: 36px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		position: relative;
+		cursor: pointer;
+	}
+
+	& .burger span {
+		width: 22px;
+		height: 2px;
+		display: block;
+		background: #ffffff;
+		position: absolute;
+		transition: all 0.2s;
+	}
+
+	& .burger span:nth-child(1) {
+		top:11px;
+		right: 10px;
+	}
+
+	& .burger span:nth-child(4) {
+		bottom:11px;
+		width: 22px;
+		left: 10px;
+	}
+
+	.second {
+		transform: rotate(45deg);
+	}
+
+	.third {
+		transform: rotate(-45deg);
+	}
+
+	.first {
+		transform:  scale(0) !important;
+	}
+
+	.fourth {
+			transform: scale(0) !important;
+	}
+}

@@ -1,0 +1,138 @@
+.professionals {
+	&__title {
+		max-width: 600px;
+		margin-bottom: 55px;
+	}
+
+	&__slider {
+		margin: 24px -16px;
+		min-width: 0;
+		@media (max-width: $md3+px) {
+			margin: 55px -10px 24px;
+		}
+
+		& .slick-list {
+			padding-top: 30px;
+			width: 5000px;
+		}
+
+		& .slick-slide {
+			display: inline-block;
+		}
+
+		& .slick-track {
+			display: block;
+		}
+
+		& .slick-arrow {
+			position: absolute;
+			top: -72px;
+			cursor: pointer;
+			width: 42px;
+			height: 42px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: all .2s ease;
+			border: 2px solid #000;
+			border-radius: 5px;
+			z-index: 3;
+
+			& svg path {
+				fill: #000;
+			}
+
+			@media (min-width: 992px) {
+				&:hover {
+					background: #000;
+
+					& svg path {
+						fill: #fff;
+					}
+				}
+			}
+
+			@media (max-width: $md3+px) {
+				top: -40px;
+			}
+
+			&.slick-disabled {
+
+			}
+
+		}
+
+		& .slick-prev  {
+			right: 67px;
+
+			@media (max-width: $md3+px) {
+				right: auto;
+				left: 10px;
+			}
+		}
+		& .slick-next  {
+			right: 18px;
+
+			@media (max-width: $md3+px) {
+				right: auto;
+				left: 60px;
+			}
+		}
+	}
+
+	&__item {
+		min-width: 302px;
+		padding:0 16px;
+		display: block;
+		color: $textColor;
+
+		@media (max-width: $md3+px) {
+			padding: 0 10px
+		}
+	}
+
+	&__img-wrap {
+		overflow: hidden;
+		border-radius: 5px;
+		width: 100%;
+		height: 335px;
+		position: relative;
+		transition: all .2s ease;
+		top: 0;
+
+		&:hover {
+			box-shadow: 0px 0px 20px rgba(#000, 0.8);
+			top: -3px;
+		}
+	}
+
+	&__text {
+		font-family: $secondFontFamily;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 23px;
+		text-transform: capitalize;
+		margin-top: 24px;
+	}
+
+	&__btn-wrap {
+		margin-top: 69px;
+		text-align: center;
+
+		@media (max-width: $md3+px) {
+			margin-top: 40px;
+		}
+
+		& .button {
+			font-weight: 500;
+			font-size: 20px;
+			padding-right: 2.2em;
+			padding-left: 2.2em;
+
+			@media (max-width: $md3+px) {
+				font-size: 16px;
+			}
+		}
+	}
+}
