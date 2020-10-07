@@ -1,5 +1,6 @@
 var isMobile = { Android: function () { return navigator.userAgent.match(/Android/i); }, BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); }, iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, Opera: function () { return navigator.userAgent.match(/Opera Mini/i); }, Windows: function () { return navigator.userAgent.match(/IEMobile/i); }, any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
 
+@@include('forms.js');
 
 $(document).ready(function() {
 	document.querySelector('body').classList.add('isload');
@@ -28,6 +29,8 @@ $(document).ready(function() {
 
 	// ==== COMMON BLOCKS =====================================================
 	@@include('../project/common-blocks/carousel-video/carousel-video.js');
+	@@include('../project/common-blocks/stars/stars.js');
+	@@include('../project/common-blocks/card-preview/card-preview.js');
 	// ==== AND COMMON BLOCKS =====================================================
 
 

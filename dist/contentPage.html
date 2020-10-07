@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Content</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p, h2{
+            font-family: 'Conv_Lato-Regular', sans-serif;
+            font-size: 30px !important;
+            font-weight: 700;
+            color: #595959;
+            margin-left: 40px;
+        }
+
+        li{
+            list-style-type: none;
+            counter-increment: li;
+            position: relative;
+            padding-left: 20px;
+        }
+        ol li::before {
+            content: counter(li) ;
+            display: inline-block;
+            width: 10px;
+            margin-right: 8px;
+            margin-left: -17px;
+            position: absolute;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+            top: 3px;
+            left: -10px;
+            color: #595959;
+            font-family: 'Conv_Lato-Regular', sans-serif;
+        }
+        li a{
+            text-decoration: none;
+            font-family: 'Conv_Lato-Regular', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            color: #595959;
+            line-height: 30px;
+        }
+
+        li a:hover{
+            color: #ff3448;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+    <body><h2>Content:</h2><ol>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="professionals.html">Professionals</a></li>
+    </ol>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.stars {
+	display: flex;
+	&__item {
+		color: #FFAB09;
+		font-size: 11px;
+
+		&:not(:last-child) {
+			margin-right: 5.5px;
+		}
+	}
+}

@@ -69,6 +69,7 @@ function html() {
 
 function css() {
 	return src(path.src.css)
+		.pipe(browsersync.stream())
 		.pipe(scss({
 			outputStyle: 'expanded',
 		}))

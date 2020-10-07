@@ -65,6 +65,10 @@
 @import "../project/common-blocks/buttons/button";
 @import "../project/common-blocks/carousel-video/carousel-video";
 @import "../project/common-blocks/carousel-video-block/carousel-video-block";
+@import "../project/common-blocks/hero-search/hero-search";
+@import "../project/common-blocks/form-search/form-search";
+@import "../project/common-blocks/card-preview/card-preview";
+@import "../project/common-blocks/stars/stars";
 // ==== AND COMMON BLOCKS =====================================================
 
 
@@ -74,6 +78,15 @@
 @import "../project/home/our-series/our-series";
 @import "../project/home/professionals/professionals";
 // ==== AND HOME =====================================================
+
+
+// ==== PROFESSIONALS =====================================================
+@import "../project/professionals/professionals";
+@import "../project/professionals/catefory-cards-list/catefory-cards-list";
+@import "../project/professionals/how-it-works/how-it-works";
+@import "../project/professionals/serch-by-city/search-by-city";
+@import "../project/professionals/trips-articles/trips-articles";
+// ==== AND PROFESSIONALS =====================================================
 
 
 // ==== FOOTER =====================================================
