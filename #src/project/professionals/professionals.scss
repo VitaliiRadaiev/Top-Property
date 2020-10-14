@@ -6,46 +6,46 @@
 	}
 
 	&__category {
-		margin: 91px 0 47px;
+		margin: 9.1rem 0 4.7rem;
 
 		@media(max-width: $md3+px) {
-			margin: 40px 0 40px;
+			margin: 4rem 0 4rem;
 		}
 	}
 
 	&__how-it-works {
-		margin: 47px 0 50px;
+		margin: 4.7rem 0 5rem;
 
 		@media(max-width: $md3+px) {
-			margin: 40px 0 40px;
+			margin: 4rem 0 4rem;
 		}
 	}
 
 	&__top-searched {
-		margin: 71px 0 47px;
+		margin: 7.1rem 0 4.7rem;
 
 		@media(max-width: $md3+px) {
-			margin: 40px 0 40px;
+			margin: 4rem 0 4rem;
 		}
 
 		&-title {
-			margin-bottom: 31px !important;
+			margin-bottom: 3.1rem !important;
 		}
 	}
 
 	&__search-by-city {
-		margin: 75px 0 34px;
+		margin: 7.5rem 0 3.4rem;
 
 		@media(max-width: $md3+px) {
-			margin: 40px 0 34px;
+			margin: 4rem 0 3.4rem;
 		}
 	}
 
 	&__trips-articles {
-		margin: 34px 0 186px;
+		margin: 3.4rem 0 18.6rem;
 
 		@media(max-width: 1023px) {
-			margin: 40px 0 0px;
+			margin: 4rem 0 0px;
 		}
 	}
 }

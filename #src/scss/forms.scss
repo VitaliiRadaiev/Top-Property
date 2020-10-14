@@ -99,16 +99,16 @@ textarea.input{
 }
 //</OPTIONS>====================================================================================================
 
-//<RATING>====================================================================================================
-.rating-block{display: table;font-size: 0;}
-.rating{display: inline-block;position: relative;vertical-align: middle;
-	&.edit .star{cursor: pointer;}
-	.star{width: 17px;height: 14px;display: inline-block;position: relative;z-index: 3;}
-}
-.rating__line{position: absolute;width: 85px;height: 14px;top: 0;left: 0;background: url('../img/icons/bg_rating.svg') 0 0 no-repeat;z-index: 1;background-size:85px 100%;}
-.rating__activeline{position: absolute;width: 0px;height: 14px;top: 0;left: 0;background: url('../img/icons/bg_rating_active.svg') 0 0 no-repeat;z-index: 2;background-size:85px 100%;}
-.rating__value{display: inline-block;color: #1b3139;font-size: 14px;line-height: 13px;vertical-align: middle;}
-//</RATING>====================================================================================================
+// //<RATING>====================================================================================================
+// .rating-block{display: table;font-size: 0;}
+// .rating{display: inline-block;position: relative;vertical-align: middle;
+// 	&.edit .star{cursor: pointer;}
+// 	.star{width: 17px;height: 14px;display: inline-block;position: relative;z-index: 3;}
+// }
+// .rating__line{position: absolute;width: 85px;height: 14px;top: 0;left: 0;background: url('../img/icons/bg_rating.svg') 0 0 no-repeat;z-index: 1;background-size:85px 100%;}
+// .rating__activeline{position: absolute;width: 0px;height: 14px;top: 0;left: 0;background: url('../img/icons/bg_rating_active.svg') 0 0 no-repeat;z-index: 2;background-size:85px 100%;}
+// .rating__value{display: inline-block;color: #1b3139;font-size: 14px;line-height: 13px;vertical-align: middle;}
+// //</RATING>====================================================================================================
 
 //<QUANTITY>====================================================================================================
 .quantity {position: relative;width: 73px;height: 47px;border: 1px solid #cfcfcf;background-color: #ffffff;}

@@ -1,4 +1,4 @@
-{
+function cardPreviewHandler(){
 	let cards = document.querySelectorAll('.card-preview');
 	if(cards.length) {
 		cards.forEach(item => {
@@ -8,4 +8,6 @@
 			}
 		})
 	}
-}
+};
+
+cardPreviewHandler();

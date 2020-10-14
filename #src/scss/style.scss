@@ -13,10 +13,6 @@
 @import "fonts";
 // ==== // ШРИФТЫ ===========================================================================================
 
-// ==== НОРМАЛАЙЗ ===========================================================================================
-//@import "normalize";
-// ==== // НОРМАЛАЙЗ ===========================================================================================
-
 // ==== ПЕРЕМЕННЫЕ ===========================================================================================
 @import "vars"; 
 // ==== // ПЕРЕМЕННЫЕ ===========================================================================================
@@ -34,17 +30,12 @@
 // ==== ГЛОБАЛЬНЫЕ СВОЙСТВА ===========================================================================================
 
 //<FANCYBOX>===============================================================================================
-//@import "fancybox.scss";
+@import "fancybox.scss";
 //<FANCYBOX>===============================================================================================
 
 // ==== ПЛАГИНЫ ===========================================================================================
 @import "slick-slider.scss";
 // ==== // ПЛАГИНЫ ===========================================================================================
-
-
-// ==== БУРГЕР ===========================================================================================
-//@import "burger";
-// ==== БУРГЕР ===========================================================================================
 
 // ==== НАЧАЛЬНЫЕ САТИЛИ ФОРМЫ ===========================================================================================
 @import "forms";
@@ -69,6 +60,15 @@
 @import "../project/common-blocks/form-search/form-search";
 @import "../project/common-blocks/card-preview/card-preview";
 @import "../project/common-blocks/stars/stars";
+@import "../project/common-blocks/map/map";
+@import "../project/common-blocks/pagination/pagination";
+@import "../project/common-blocks/box/box";
+@import "../project/common-blocks/rating-block/rating-block";
+@import "../project/common-blocks/buttons/button-submit.scss";
+@import "../project/common-blocks/card-video/card-video.scss";
+@import "../project/common-blocks/accordion/accordion";
+@import "../project/common-blocks/card-post/card-post";
+@import "../project/common-blocks/card-tv-series/card-tv-series";
 // ==== AND COMMON BLOCKS =====================================================
 
 
@@ -87,6 +87,53 @@
 @import "../project/professionals/serch-by-city/search-by-city";
 @import "../project/professionals/trips-articles/trips-articles";
 // ==== AND PROFESSIONALS =====================================================
+
+
+// ==== PROFESSIONALS CATEGORY =====================================================
+@import "../project/professionals-category/professionals-category";
+// ==== AND PROFESSIONALS CATEGORY =====================================================
+
+
+// ==== PROFESSIONALS DETAILS =====================================================
+@import "../project/professionals-details/professionals-details";
+@import "../project/professionals-details/hero/hero";
+@import "../project/professionals-details/gallery/gallery.scss";
+@import "../project/professionals-details/reviews-block/reviews-block";
+@import "../project/professionals-details/add-reviwe-form/add-reviwe-form";
+// ==== AND PROFESSIONALS DETAILS =====================================================
+
+
+// ==== VIDEOS =====================================================
+@import "../project/videos/videos";
+// ==== AND VIDEOS =====================================================
+
+
+// ==== VIDEO DETAILS =====================================================
+@import "../project/video-details/video-details";
+// ==== AND VIDEO DETAILS =====================================================
+
+
+// ==== BLOG =====================================================
+@import "../project/blog/blog";
+@import "../project/blog/hero-gallery/hero-gallery";
+// ==== AND BLOG =====================================================
+
+
+// ==== BLOG DETAILS =====================================================
+@import "../project/blog-details/blog-details";
+@import "../project/blog-details/hero-image/hero-image";
+@import "../project/blog-details/citation/citation";
+// ==== AND BLOG DETAILS =====================================================
+
+
+// ==== SUSTAINABILITY =====================================================
+@import "../project/sustainability/sustainability";
+// ==== AND SUSTAINABILITY =====================================================
+
+
+// ==== TV-SERIES =====================================================
+@import "../project/tv-series/tv-series";
+// ==== AND TV-SERIES =====================================================
 
 
 // ==== FOOTER =====================================================

@@ -1,0 +1,45 @@
+.citation {
+	display: flex;
+
+	&__column {}
+	&__column--1 {
+		flex: 0 0 auto;
+		padding: 0 1rem;
+	}
+	&__column--2 {
+		flex: 1 1 auto;
+	}
+	&__quotes {
+		font-size: 18.8rem;
+		line-height: 25.6rem;
+		color: #344F6E;
+
+		@media (max-width: $md3+px) {
+			font-size: 8.8rem;
+   			 line-height: 14.6rem;
+		}
+	}
+	&__text {
+		margin-top: 7rem;
+		margin-bottom: 2rem;
+		font-weight: bold;
+		font-size: 2.2rem;
+		line-height: 3.4rem;
+		color: #101924;
+		max-width: 77rem;
+
+				@media (max-width: $md3+px) {
+					margin-top: 4rem;
+					margin-bottom: 1rem;
+					font-size: 1.8rem;
+					line-height: 2.4rem;
+				}
+	}
+
+	&__name {
+		font-weight: 600;
+		font-size: 1.6rem;
+		line-height: 3.4rem;
+		color: #101924;
+	}
+}

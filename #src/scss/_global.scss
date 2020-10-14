@@ -30,6 +30,15 @@ body {
 	height: 100%;
 	min-width: $minwidth;
 	margin: 0 auto;
+	font-size: 10px;
+
+	@media (max-width: 1440px) {
+		font-size: 8px;
+	}
+
+	@media (max-width: 1023px) {
+		font-size: 10px;
+	}
 }
 body {
 	line-height: 1;
@@ -101,32 +110,15 @@ h6 {
 }
 //</ОБОЛОЧКА>===========================================================================================================
 .page {
-	height: 100%;
+
 }
 
-//<ОСНОВНАЯ СЕТКА>===========================================================================================================
-// .container {
-// 	max-width: $mw + px;
-// 	margin: 0 auto;
-// 	width: 100%;
-// 	@media (max-width: $md1+px) {
-// 		max-width: 970px;
-// 	}
-// 	@media (max-width: $md2+px) {
-// 		max-width: 750px;
-// 	}
-// 	@media (max-width: $md3+px) {
-// 		max-width: none;
-// 		padding: 0 10px;
-// 	}
-// }
-//</ОСНОВНАЯ СЕТКА>===========================================================================================================
 .container {
 	position: static;
-	max-width: 1210px !important;
+	max-width: 121rem !important;
 	margin: 0 auto;
 	width: 100%;
-	padding: 0 15px;
+	padding: 0 1.5rem;
 }
 
 .ibg {
@@ -142,11 +134,74 @@ h6 {
 }
 
 .text {
-	font-size: 16px;
-	line-height: 28px;
+	font-size: 1.6rem;
+	line-height: 2.8rem;
 
 	@media (max-width: $md3+px) {
-		font-size: 14px;
-		line-height: 26px;
+		font-size: 1.4rem;
+		line-height: 2.6rem;
+	}
+}
+
+.input {
+	min-height: 5rem;
+	padding: 1rem 1.6rem;
+	background: rgba(52, 79, 110, 0.1);
+	border: 1px solid rgba(52, 79, 110, 0.3);
+	outline: none;
+	width: 100%;
+	font-size: 1.4rem;
+	line-height: 1.7rem;
+	color: #344F6E;
+
+	&::placeholder {
+		font-size: 1.4rem;
+		line-height: 1.7rem;
+		color: #344F6E;
+	}
+
+	&:focus {
+		border: 1px solid rgba(#000, 0.4);
+	}
+}
+
+.textarea {
+	resize: none;
+	height: 17.2rem;
+	padding: 1.6rem 1.6rem;
+	background: rgba(52, 79, 110, 0.1);
+	border: 1px solid rgba(52, 79, 110, 0.3);
+	outline: none;
+	width: 100%;
+	font-size: 1.4rem;
+	line-height: 1.7rem;
+	color: #344F6E;
+	border-radius: 0;
+
+	&::placeholder {
+		font-size: 1.4rem;
+		line-height: 1.7rem;
+		color: #344F6E;
+	}
+
+	&:focus {
+		border: 1px solid rgba(#000, 0.4);
+	}
+}
+
+.error404 {
+	& .container {
+		min-height: 50vh;
+	}
+
+	& h1 {
+		font-size: 4.6rem;
+		line-height: 5.6rem;
+		margin-top: 2rem;
+	}
+
+	& p {
+		font-size: 2rem;
+		line-height: 3rem;
 	}
 }

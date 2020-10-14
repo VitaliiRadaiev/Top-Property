@@ -23,29 +23,29 @@
 	&__body {
 		position: relative;
 		z-index: 2;
-		min-height: 320px;
-		padding-top: 30px;
-		padding-bottom: 30px;
+		min-height: 32rem;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
 	}
 
 	&__title {
 		font-weight: bold;
-		font-size: 46px;
-		line-height: 64px;
+		font-size: 4.6rem;
+		line-height: 6.4rem;
 		text-align: center;
 		color: #fff;
-		margin: 25px 0 36px;
+		margin: 2.5rem 0 3.6rem;
 
 		@media(max-width: $md3+px) {
-			font-size: 32px;
-			line-height: 42px;
+			font-size: 3.2rem;
+			line-height: 4.2rem;
 		}
 	}
 
 	&__form {
 		width: 100%;
-		max-width: 570px;
-		margin: 30px auto;
+		max-width: 57rem;
+		margin: 3rem auto;
 	}
 }
 

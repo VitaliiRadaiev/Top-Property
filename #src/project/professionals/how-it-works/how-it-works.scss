@@ -1,20 +1,20 @@
 .how-it-works {
 	&__title {
 		text-align: center;
-		margin-bottom: 12px !important;
+		margin-bottom: 1.2rem !important;
 	}
 
 	&__cards {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		margin: 0 -15px;
+		margin: 0 -1.5rem;
 	}
 
 	&__item {
-		padding: 0 15px;
+		padding: 0 1.5rem;
 		width: 33.3333%;
-		margin-bottom: 30px;
+		margin-bottom: 3rem;
 
 		@media (max-width: 840px) {
 			width: 50%;
@@ -31,25 +31,25 @@
 		height: 100%;
 		color: $textColor;
 		background: #FFFFFF;
-		border-radius: 9px;
+		border-radius: .9rem;
 		border: 1px solid #EAEAEA;
 		transition: all .2s ease;
 		position: relative;
 		top: 0;
 		text-align: center;
-		padding: 41px 15px 33px;
+		padding: 4.1rem 1.5rem 3.3rem;
 
 		@media (min-width: 992px) {
 			&:hover {
-				box-shadow: 0px 12px 14px rgba(37, 41, 79, 0.1);
+				box-shadow: 0px 1.2rem 1.4rem rgba(37, 41, 79, 0.1);
 				border: 1px solid transparent;
-				top: -3px;
+				top: -0.3rem;
 			}
 		}
 	}
 	&__card-icon {
-		height: 47px;
-		margin-bottom: 32px;
+		height: 4.7rem;
+		margin-bottom: 3.2rem;
 
 		& img {
 			height: 100%;
@@ -57,14 +57,14 @@
 	}
 	&__card-title {
 		font-weight: bold;
-		font-size: 20px;
-		line-height: 28px;
-		margin-bottom: 15px;
+		font-size: 2rem;
+		line-height: 2.8rem;
+		margin-bottom: 1.5rem;
 	}
 
 	&__card-text {
 		font-weight: 500;
-		font-size: 14px;
-		line-height: 21px;
+		font-size: 1.4rem;
+		line-height: 2.1rem;
 	}
 }

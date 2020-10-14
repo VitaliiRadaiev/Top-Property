@@ -1,6 +1,7 @@
 {
 	let heroSlider = document.querySelector('.hero-slider');
 	if(heroSlider) {
+		let countSlide = document.querySelector('.hero-slider__dots-body').children.length;
 
 		$('.hero-slider__body').slick({
 		  slidesToShow: 1,
@@ -8,14 +9,14 @@
 		  arrows: false,
 		  fade: true,
 		  asNavFor: '.hero-slider__dots-body',
-		  infinite: false,
+		  infinite: true,
 		});
 
 		$('.hero-slider__dots-body').slick({
-		  slidesToShow: 4, 
+		  slidesToShow: countSlide, 
 		  asNavFor: '.hero-slider__body',
 		  arrows: false,
-		  infinite: false,
+		  infinite: true,
 		});
 
 		document.querySelectorAll('.hero-slider__dots-item').forEach(item => {

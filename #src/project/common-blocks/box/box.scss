@@ -1,0 +1,178 @@
+.box {
+	background: #fff;
+	box-shadow: 0px 2.8rem 4rem rgba(0, 0, 0, 0.05);
+	border-radius: 1rem;
+	padding: 1.8rem;
+	color: #344F6E;
+	font-size: 1.6rem;
+	line-height: 2.6rem;
+	color: #344F6E;
+	margin-bottom: 3rem !important;
+
+	& p {
+		font-size: 1.6rem;
+		line-height: 2.6rem;
+		color: #344F6E;
+		margin-bottom: 1.4rem;
+	}
+
+	&__map {
+		position: relative;
+	}
+
+	& a.box__map-btn-direction {
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		font-weight: bold;
+		font-size: 1.2rem !important;
+		line-height: 1.2rem;
+		color: #FFFFFF !important;
+		background: #000;
+		border-radius: 2em;
+		padding: 0.8em 1.5em;
+		transition: all .2s ease;
+		display: inline-flex;
+		align-items: center;
+		z-index: 2;
+
+		@media (min-width: 992px) {
+			&:hover {
+				background: rgba(#000, 0.6);
+				text-decoration: none;
+			}
+		}
+
+		& > span {
+			width: 1.5em;
+			margin-right: 0.4em;
+
+			& img {
+				width: 100%;
+			}
+		}
+
+	}
+	& h3 {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 2rem;
+		line-height: 2.4rem;
+		color: #1E2E42;
+		margin-bottom: 2rem;
+	}
+
+	& h4 {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 1.6rem;
+		line-height: 2rem;
+		margin-top: 1.4rem;
+		margin-bottom: 1.6rem;
+
+	}
+
+	& a {
+		font-size: 1.6rem;
+		line-height: 2.6rem;
+		color: #344F6E;
+		transition: all .2s ease;
+
+		@media (min-width: 992px) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	& ul {
+		margin: 1.4rem 0;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&.space-between {
+			& > li {
+				justify-content: space-between;
+
+				& > span {
+					width: auto;
+					flex: 0 0 auto;
+				}
+			}
+		}
+
+		&.point {
+			& > li {
+				align-items: flex-start;
+
+				& > span {
+					&:first-child {
+						margin-top: 1rem;
+						border-radius: 50%;
+						min-width: 1rem;
+						min-height: 1rem;
+						background: #1E2E42;
+						margin-right: 2rem;
+					}
+				}
+			}
+		}
+
+		& > li {
+			display: flex;
+			align-items: center;
+
+			&:not(:last-child) {
+				margin-bottom: 1.5rem;
+			}
+
+			& > span {
+				width: 2.4rem;
+				margin-right: 0.9rem;
+				& img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+
+	
+	&__form {
+		&__submit {
+			& .button-submit {
+				max-width: 100%;
+			}
+		}
+	}
+	&__form-head {
+		margin: 2.6rem 0 2.4rem;
+		display: flex;
+		align-items: center;
+
+	}
+
+	&__form-head-column {}
+	&__form-head-column--1 {
+		flex: 0 0 auto;
+		margin-right: 1.5rem;
+	}
+	&__form-head-column--2 {
+		& > h4 {
+			margin-bottom: 0;
+		}
+	}
+
+	&__form-head-photo {
+		width: 5.6rem;
+		height: 5.6rem;
+
+	}
+
+	&__form-item {
+		margin-bottom: 2rem;
+	}
+	
+} 

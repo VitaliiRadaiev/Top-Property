@@ -2,10 +2,10 @@
 	display: flex;
 	&__item {
 		color: #FFAB09;
-		font-size: 11px;
+		font-size: 1.1rem;
 
 		&:not(:last-child) {
-			margin-right: 5.5px;
+			margin-right: 0.55rem;
 		}
 	}
 }

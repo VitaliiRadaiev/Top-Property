@@ -1,0 +1,136 @@
+.hero {
+	position: relative;
+	min-height: 47.1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin-bottom: 8rem;
+
+	& .container {
+		flex-grow: 0;
+	}
+
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__body {
+		position: relative;
+		z-index: 2;
+		background: #FFFFFF;
+		box-shadow: 0px 3rem 7.6rem rgba(37, 41, 79, 0.17);
+		border-radius: 0.9rem;
+		display: flex;
+		align-items: center;
+		padding: 1.8rem 1.6rem 1.8rem 1.8rem;
+		font-family:$secondFontFamily;
+		font-size: 1.6rem;
+		line-height: 2.8rem;
+		color: rgba(#1E2E42, 0.7);
+		margin-left: 5rem;
+		transform: translateY(6rem);
+
+		@media (max-width: 1023px) {
+			display: block;
+			text-align: center;
+			margin-left: 0;
+		}
+	}
+
+	&__decor {
+		position: absolute;
+		left: -4rem;
+		height: 14.8rem;
+		width: 14.8rem;
+		border-radius: 50%;
+		background: #000;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		& img {
+			//width: 70%;
+			max-height: 70%;
+		}
+
+		@media  (max-width: 1023px) {
+			display: none;
+		}
+	}
+
+	&__column {}
+	&__column--1 {
+		flex: 1 1 auto;
+		padding-left: 11rem;
+		padding-right: 1rem;
+
+		@media (max-width: 1023px) {
+			padding: 0;
+			margin-bottom: 2rem;
+		}
+	}
+	&__column--2 {
+		flex: 0 0 auto;
+		padding: 0 1.5rem;
+
+		@media (max-width: 1023px) {
+			padding: 0;
+			margin-bottom: 2rem;
+		}
+	}
+	&__column--3 {
+		flex: 0 0 auto;
+	}
+
+	&__title {
+		font-family: $mainFontFamily;
+		font-weight: bold;
+		font-size: 3.4rem;
+		line-height: 4.1rem;
+		color: #000000;
+		margin-bottom: 0.3rem;
+		margin-top: 0.7rem;
+
+		@media (max-width: $md3+px) {
+			font-size: 2.4rem;
+			line-height: 3.1rem;
+		}
+	}
+
+	&__subtitle {
+
+	}
+
+	&__reviews-count {
+		margin-bottom: 0.2rem;
+	}
+
+	&__rating {
+		width: 18.5rem;
+
+		& .stars__item {
+			font-size: 2.1rem;
+		}
+		& .stars__item:not(:last-child) {
+		    margin-right: 1.1rem;
+		}
+
+		@media (max-width: 1023px) {
+			margin: 0 auto;
+			width: 15rem;
+		}
+
+	}
+
+	& .button {
+		font-size: 1.6rem;
+		padding-right: 2.4em;
+	    padding-left: 2.4em;
+	    padding-bottom: calc(2.7em - 1px);
+	    padding-top: calc(2.7em - 1px);
+	}
+}

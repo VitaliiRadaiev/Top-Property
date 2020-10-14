@@ -1,0 +1,157 @@
+.professionals-details {
+	& .container {
+		//max-width: 119rem !important;
+	}
+
+	&__hero {
+		margin: 0 0 20rem 0;
+	}
+
+	&__content {
+
+		margin: 13.5rem 0 10rem; 
+
+
+		@media (max-width: $md3+px) {
+			margin: 13.5rem 0 0rem; 
+		}
+
+		&-body {
+			display: flex;
+			flex-wrap: wrap;
+			@media (max-width: 1023px) {
+				flex-direction: column;
+			}
+		}
+
+		&-column {
+			&--1 {
+				//flex: 1 1 auto;
+				flex: 0 0 calc(90% - 25.4rem);
+				padding-right: 2.5rem;
+				padding-left: 1.1rem;
+				min-width: 0;
+
+				@media (max-width: 1023px) {
+					width: 100%;
+					flex: 0 0 100%;
+				}
+
+
+
+				& .box {
+					padding: 3rem;
+					margin-bottom: 4rem !important;
+					& p {
+						font-weight: 500;
+						font-size: 1.8rem;
+						line-height: 3.3rem;
+						margin-bottom: 3.3rem;
+
+						&:last-child {
+							margin-bottom: 0;
+						}
+
+						@media (max-width: $md3+px) {
+							font-size: 1.6rem;
+							line-height: 3rem;
+							margin-bottom: 2rem;
+						}
+					}
+
+					& ul.point {
+						font-weight: 500;
+						font-size: 1.8rem;
+						line-height: 3.3rem;
+
+						@media (max-width: $md3+px) {
+							font-size: 1.6rem;
+							line-height: 3rem;
+							margin-bottom: 2rem;
+						}
+
+						& > li {
+							&:not(:last-child) {
+								margin-bottom: 3rem;
+
+								@media (max-width: $md3+px) {
+									margin-bottom: 1.5rem;
+								}
+
+							}
+						}
+					}
+
+					@media (max-width: $md3+px) {
+						padding: 1.8rem;
+					}
+				}
+
+				@media (max-width: 1023px) {
+					flex: 0 1 100%;
+					padding-right: 0;
+					padding-left: 0;
+				}
+			}
+			&--2 {
+				flex: 0 0 calc(25.4rem + 10%);
+				margin-top: 1rem;
+
+				@media (max-width: 1023px) {
+					flex: 0 1 100%;
+					order: -1;
+				}
+			}
+		}
+
+		&-row {
+			width: 100%;
+		}
+	}
+
+	&__gallery {
+		margin: 6rem 0 5.1rem 0; 
+	}
+
+	&__reviews {
+		margin: 5.1rem 0 4.4rem 0;
+	}
+
+	&__add-review {
+		margin: 4.4rem 0 5.1rem 0;
+	}
+
+	&__related-business {
+		margin: 5.4rem 0 5.1rem 0;
+
+		&-title {
+			text-align: center;
+			margin-bottom: 5rem !important;
+		}
+
+		& .block-columns--4 {
+			margin-left: 0 !important;
+
+			@media (max-width: 1023px) {
+				margin-left: -1.5rem !important;
+			}
+		}
+	}
+
+	&__videos {
+		margin: 7.8rem 0 7rem 0;
+
+		&-title {
+			text-align: center;
+			margin-bottom: 4.8rem !important;
+		}
+
+		& .block-columns--3 {
+			margin-left: 0 !important;
+
+			@media (max-width: 1023px) {
+				margin-left: -1.5rem !important;
+			}
+		}
+	}
+}

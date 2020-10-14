@@ -2,12 +2,22 @@
 	font-family: $mainFontFamily;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 42px;
-	line-height: 51px;
+	font-size: 4.2rem;
+	line-height: 5.1rem;
 	color: #000000;
 
 	@media (max-width: $md3+px) {
-		font-size: 28px;
-		line-height: 37px;
+		font-size: 2.8rem;
+		line-height: 3.7rem;
+	}
+
+
+	&.size-3 {
+		font-family: $mainFontFamily;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 2rem;
+		line-height: 2.4rem;
+		color: #1E2E42;
 	}
 }

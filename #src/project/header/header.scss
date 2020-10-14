@@ -1,11 +1,11 @@
 .header {
 	background: #fff;
-	min-height: 81px;
+	min-height: 8.1rem;
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	transition: all .5s ease;
-	font-size: 16px;
+	font-size: 1.6rem;
 
 	&.bg-transparent {
 		background: transparent;
@@ -13,7 +13,7 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		min-height: 115px;
+		min-height: 11.5rem;
 
 		&.navOpen {
 			background: #fff;
@@ -22,10 +22,21 @@
 				background: #fff;
 			}
 		}
+
+		& .navbar-menu {
+			& .navbar-item {
+				&:not(:last-child) {
+					&:hover {
+						background: #ffffff2e;
+						color: #000;
+					}
+				}
+			}
+		}
 	}
 
 	&__logo {
-		margin-top: 7px;
+		margin-top: 0.7rem;
 	}
 
 	& .container {
@@ -43,19 +54,20 @@
 
 	& .navbar-end {
 		width: 100%;
-		font-size: 16px;
+		font-size: 1.6rem;
 	}
 
 	& .navbar-brand {
 		text-align: center;
-		margin-left: 11px !important;
+		margin-left: 1.1rem !important;
+		align-items: center;
 	}
 
 	& .navbar-menu {
 
 		& .button {
-			font-size: 16px;
-			letter-spacing: 0.4px;
+			font-size: 1.6rem;
+			letter-spacing: 0.04rem;
 			padding-right: 1.8em;
 			padding-left: 1.8em;
 			padding-bottom: calc(1.6em - 1px);
@@ -67,8 +79,7 @@
 				padding: .5rem 1.24rem;
 				color: #000;
 				&:hover {
-					background: #ffffff2e;
-					color: #000;
+					background: rgba(#000, 0.1);
 				}
 			}
 

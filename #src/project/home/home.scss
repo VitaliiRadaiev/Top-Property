@@ -2,30 +2,30 @@
 	&__hero-slider {}
 
 	&__our-series {
-		margin: 177px 0 80px;
+		margin: 17.7rem 0 8rem;
 
 		@media (max-width: $md3+px) {
-			margin: 100px 0 80px;
+			margin: 10rem 0 8rem;
 		}
 	}
 
 	&__professionals {
-		margin: 92px 0 80px;
+		margin: 9.2rem 0 8rem;
 	}
 
 	&__learn-videos {
-		margin: 211px 0 310px;
+		margin: 21.1rem 0 31rem;
 
 		@media (max-width: 1023px) {
-			margin: 211px 0 110px;
+			margin: 21.1rem 0 11rem;
 		}
 
 		@media (max-width: $md3+px) {
-			margin: 80px 0 150px;
+			margin: 8rem 0 15rem;
 		}
 
 		@media (max-width: $md4+px) {
-			margin: 80px 0 0px;
+			margin: 8rem 0 0px;
 		}
 	} 
 }

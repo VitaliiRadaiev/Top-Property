@@ -1,0 +1,150 @@
+.blog-detail {
+	&__hero {}
+
+	&__content {
+		margin: 2.5rem 0 5rem;
+
+		& .content {
+			font-weight: 500;
+			font-size: 1.8rem;
+			line-height: 4rem;
+			color: #101924;
+
+			@media (max-width: $md3+px) {
+				font-size: 1.6rem;
+				line-height: 3rem;
+			}
+
+			& > p {
+				max-width: 97rem;
+				margin-right: auto;
+				margin-left: auto;
+				margin-bottom: 4rem;
+
+				@media (max-width: $md3+px) {
+					margin-bottom: 2rem;
+				}
+			}
+
+			& figure {
+				margin: 4rem 0;
+
+				& img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	&__content-head {
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 4rem;
+
+		@media (max-width: $md3+px) {
+			margin-bottom: 2rem;
+		}
+
+	}
+	&__content-head-inner {
+		min-height: 10rem;
+		padding: 2rem 0;
+		max-width: 97rem;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@media (max-width: $md3+px) {
+			display: block;
+		}
+	}
+
+	&__content-head-column {
+		display: flex;
+		align-items: center;
+		&:first-child {
+			margin-right: 2rem;
+
+			@media (max-width: $md3+px) {
+				margin-right: 0;
+				margin-bottom: 2rem;
+			}
+		}
+	}
+
+	&__content-head-photo {
+		height: 6rem;
+		width: 6rem;
+		border-radius: 50%;
+		overflow: hidden;
+		margin-right: 1.5rem;
+		flex: 0 0 auto;
+	}
+
+	&__content-head-text {
+		font-size: 1.6rem;
+		line-height: 2rem;
+	}
+	&__content-head-supname {
+		color: #344F6E;
+		margin-top: 0.4rem;
+		margin-bottom: 0.6rem;
+	}
+	&__content-head-name {
+		font-weight: bold;
+		color: #000000;
+	}
+
+	&__content-head-label {
+		color: #000;
+		margin-right: 2rem;
+		font-size: 1.6rem;
+	}
+	&__content-head-social {
+		display: flex;
+		margin-right: -1rem;
+	}
+	&__content-head-social-item {
+		display: inline-flex;
+		height: 3.5rem;
+		width: 3.5rem;
+		transition: all .2s ease;
+		justify-content: center;
+		align-items: center;
+
+		@media (min-width: 992px) {
+			&:hover {
+				background: rgba(#000, 0.2);
+			}
+		}
+
+		& > span {
+			height: 16px;
+
+			& img {
+				height: 100%;
+			}
+		}
+	}
+
+	&__citation {
+		margin: 4rem auto 2rem;
+		max-width: 97rem;
+
+		@media (max-width: $md3+px) {
+			margin: 1rem auto 2rem;
+		}
+
+	}
+
+	&__images {
+		margin: 4rem 0 3rem;
+
+		&-item {
+			height: 0;
+			padding-bottom: 120%;
+		}
+	}
+
+}

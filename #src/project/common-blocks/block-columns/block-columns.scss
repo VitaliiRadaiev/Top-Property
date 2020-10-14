@@ -1,25 +1,48 @@
 .block-columns {
 	&--3 {
-		margin-left: -16px !important; 
-		margin-right: -16px !important;
+		margin-left: -1.5rem !important; 
+		margin-right: -1.5rem !important;
 		justify-content: center;
-
-		& .column {
-			//width: 33.333% !important;
-			padding: 0 16px;
-			margin-bottom: 32px;
-		}
-	}
-
-	&--4 {
-		margin-left: -15px !important; 
-		margin-right: -15px !important;
 		flex-wrap: wrap !important;
 		display: flex !important;
 
 		& .column {
-			padding: 0 15px;
-			margin-bottom: 30px;
+			//width: 33.333% !important;
+			padding: 0 1.5rem;
+			margin-bottom: 3.2rem;
+
+			@media (max-width: 767px) {
+				width: 100% !important;
+				flex: 0 1 100%;
+			}
+
+			&.is-half-tablet {
+				@media (max-width: 1023px) {
+					width: 50% !important;
+				}
+
+				@media (max-width: 768px) {
+					flex: 0 1 auto !important;
+					width: 50% !important;
+				}
+
+				@media (max-width: 679px) {
+					width: 100% !important;
+				}
+			}
+		}
+	}
+
+	&--4 {
+		margin-left: -1.5rem !important; 
+		margin-right: -1.5rem !important;
+		flex-wrap: wrap !important;
+		display: flex !important;
+		justify-content: center;
+
+		& .column {
+			padding: 0 1.5rem;
+			margin-bottom: 3rem;
 
 			&.is-3 {
 				@media (max-width: 1023px) {

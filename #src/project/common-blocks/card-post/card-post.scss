@@ -1,0 +1,50 @@
+.card-post {
+	display: block;
+	transition: all .2s ease;
+	position: relative;
+	color: #000;
+	font-size: 1.6rem;
+	line-height: 2rem;
+
+	@media (min-width: 992px) {
+		&:hover {
+			color: #000;
+			& .card-post__img {
+				top: -3px;
+				box-shadow: 0 0 2rem rgba(#000, 0.2)
+			}
+		}
+	}
+
+	&__img {
+		position: relative;
+		height: 0;
+		padding-bottom: 63%;
+		overflow: hidden;
+		border-radius: 0.4rem;
+		margin-bottom: 2.2rem;
+		transition: all .2s ease;
+		top: 0;
+	}
+
+	&__center {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 1rem;
+	}
+
+	&__date {
+		color: #344F6E;
+		margin-right: 1.5rem;
+	}
+
+	&__storys {
+		color: #090B14;
+	}
+
+	&__text {
+		font-weight: bold;
+		padding-bottom: 1rem;
+	}
+}

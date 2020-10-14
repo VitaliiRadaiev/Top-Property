@@ -1,0 +1,42 @@
+
+.hero-image {
+	text-align: center;
+	&__img {
+		position: relative;
+		height: 0;
+		padding-bottom: 44%;
+		border-radius: 0.9rem;
+		overflow: hidden;
+		margin-bottom: 3rem	
+	}
+
+	&__suptitle {
+		font-size: 1.6rem;
+		line-height: 2rem;
+		color: #344F6E;
+		margin-bottom: 2rem;
+
+		@media (max-width: $md3+px) {
+			margin-bottom: 1rem;
+		}
+	}
+
+	&__title {
+		font-weight: bold;
+		font-size: 4.6rem;
+		line-height: 5.6rem;
+		color: #000000;
+		margin-bottom: 2rem;
+
+
+		@media (max-width: $md3+px) {
+			font-size: 2.6rem;
+			line-height: 3.6rem;
+		}
+
+		@media (max-width: $md4+px) {
+			font-size: 2rem;
+			line-height: 2.6rem;
+		}
+	}
+}

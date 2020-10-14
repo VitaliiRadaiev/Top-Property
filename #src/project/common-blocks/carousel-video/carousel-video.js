@@ -10,7 +10,7 @@
 		} else {
 			video.pause();
 			btn.firstElementChild.className = 'icon-play3';
-			btn.firstElementChild.style.marginLeft = '4px';
+			btn.firstElementChild.style.marginLeft = '0.4rem';
 		}
 	}
 
@@ -48,7 +48,13 @@
 					btn.style.opacity = '1';
 				}
 
-			})
+			});
+
+			video.addEventListener('ended', () => {
+				video.pause();
+				btn.firstElementChild.className = 'icon-play3';
+				btn.firstElementChild.style.marginLeft = '0.4rem';
+			});
 		})
 
 

@@ -1,0 +1,194 @@
+.professionals-category {
+	margin-bottom: 18.6rem;
+
+	@media(max-width: 1023px) {
+		margin-bottom: 0px;
+	}
+
+
+	&.professionals-category-v2 {
+		& .professionals-category__content-item {
+			width: 100%;
+		}
+	}
+
+	& .container {
+		max-width: 120rem !important;
+	}
+
+	&__title {
+		margin: 8.6rem 0 5.6rem;
+		font-weight: bold;
+		font-size: 4.6rem;
+		line-height: 6.4rem;
+		text-align: center;
+		color: #000000;
+
+		@media (max-width: $md3+px) {
+			font-size: 3.2rem;
+			line-height: 5rem;
+			margin: 2.5rem 0 1rem;
+		}
+	}
+
+	&__body {
+		display: flex;
+
+		@media (max-width: 1023px) {
+			flex-wrap: wrap;
+		}
+	}
+	&__column {}
+	&__column--1 {
+		flex: 0 0 570 / 1170 * 100%;
+
+		@media (max-width: 1023px) {
+			flex: 0 0 100%;
+		}
+	}
+	&__column--2 {
+		flex: 1 1 auto;
+		padding-left: 5.5%;
+
+		@media (max-width: 1023px) {
+			flex: 0 0 100%;
+			order: -1;
+			padding-left: 0;
+			margin-bottom: 4rem;
+		}
+	}
+
+	&__options {
+		margin-bottom: 0.7rem;
+	}
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -1.5rem;
+	}
+
+	&__content-item {
+		padding: 0 1.5rem;
+		margin-bottom: 3rem;
+		width: 50%;
+
+		@media (max-width: 575px) {
+			width: 100%;
+		}
+	}
+
+
+	&__map {
+		width: 100%;
+		height: 88.1rem;
+		position: relative;
+
+		@media (max-width: 1023px) {
+			height: 60rem;
+		}
+	}
+	&__map-form {
+		position: absolute;
+		top: 2rem;
+		left: 2.5rem;
+		right: 2.5rem;
+		background: #FFFFFF;
+		box-shadow: 0px 1.2rem 1.4rem rgba(37, 41, 79, 0.1);
+		border-radius: 0.9rem;
+		min-height: 5.2rem;
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		& .form-map__select__select  {
+			width: 100%;
+		}
+
+		& .select .select-options {
+			min-width: 100%;
+			top: 4.2rem;
+		}
+	}
+
+	&__pagination {
+		margin: 2rem 0;
+	}
+}
+
+
+
+//<SELECT (sel+tab)>====================================================================================================
+.select {
+	&:after {
+		display: none !important;
+	}
+
+	@media(max-width: $md3+px) {
+		width: 100%;
+	}
+}
+.select-block{position: relative;}
+.select__label{z-index:2;position:absolute;top:-0.8rem;background-color:#f7f7f7;padding:0 0.5rem;color:#979797;font-weight:600;font-size:1.3rem;line-height:1.6rem;left:2rem;}
+.select{position: relative;cursor: pointer;
+	.select-title{z-index: 1;width: 100%;
+		height: 3.5rem;
+		position: relative;
+		background-color: #fff;
+		border: none;
+	}
+	.select-title__arrow{position: absolute;top:0;
+		right: 0px;width:4rem;height:100%;
+		background: url('../img/icons/triangle.svg') center no-repeat;
+	}
+	.select-title__value{
+		font-family: $secondFontFamily;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.6rem;
+		color:rgba(#000, 0.7);
+		line-height: 3.5rem;
+		display: block;
+		overflow: hidden;
+		padding: 0 3.3rem 0 2.1rem;
+		white-space: nowrap;
+		text-transform: none;
+		text-overflow: ellipsis;
+	}
+	.select-options{
+		position: absolute;z-index: 10;
+		top: 4.4rem;display: none;overflow: hidden;
+		min-width: 130%;
+		background-color: #fff;
+		border: 1px solid #dedede;
+		padding: 1rem 0px 1rem 0px;
+
+		@media(max-width: $md3+px) {
+			min-width: 100%;
+		}
+	}
+	.select-options-scroll{
+		max-height: 11.3rem;
+		overflow: auto;
+		padding: 0 0px 0 0px;
+	}
+	.select-options-list{padding: 0px 0px 0px 0px;}
+	.select-options__value{color: #000;
+		font-family: $secondFontFamily;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.6rem;
+		line-height: 3rem;
+		color:rgba(#000, 0.7);
+		margin: 0px 0px 0px 0px;
+		padding-left: 2.1rem;
+		padding-right: 1rem;
+		&:last-child{margin:0px 0px 0px 0px;}
+		&:hover{
+			color: #000;
+			background: rgba(#000, 0.2);
+		}
+	}
+}
+//</SELECT>====================================================================================================

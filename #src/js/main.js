@@ -31,6 +31,10 @@ $(document).ready(function() {
 	@@include('../project/common-blocks/carousel-video/carousel-video.js');
 	@@include('../project/common-blocks/stars/stars.js');
 	@@include('../project/common-blocks/card-preview/card-preview.js');
+	@@include('../project/common-blocks/rating-block/rating-block.js');
+	@@include('../project/common-blocks/card-video/card-video.js');
+	@@include('../project/common-blocks/accordion/accordion.js');
+	@@include('../project/common-blocks/card-tv-series/card-tv-series.js');
 	// ==== AND COMMON BLOCKS =====================================================
 
 
@@ -42,7 +46,45 @@ $(document).ready(function() {
 	@@include('../project/home/hero-slider/hero-slider.js');
 	@@include('../project/home/professionals/professionals.js');
 	// ==== AND HOME =====================================================
+	
+
+	// ==== PROFESSIONALS CATEGORY =====================================================
+	@@include('../project/professionals-category/professionals-category.js');
+	// ==== AND PROFESSIONALS CATEGORY =====================================================
+	
+
+	// ==== PROFESSIONALS DETAILS =====================================================
+	@@include('../project/professionals-details/hero/hero.js');
+	@@include('../project/professionals-details/gallery/gallery.js');
+	@@include('../project/professionals-details/reviews-block/reviews-block.js');
+	@@include('../project/professionals-details/add-reviwe-form/add-reviwe-form.js');
+	// ==== AND PROFESSIONALS DETAILS =====================================================
+	
+
+	// ==== VIDEOS =====================================================
+	@@include('../project/videos/videos.js');
+	// ==== AND VIDEOS =====================================================
+	
+
+	// ==== VIDEO DETAILS =====================================================
+	@@include('../project/video-details/video-details.js');
+	// ==== AND VIDEO DETAILS =====================================================
+	
+
+	// ==== BLOG =====================================================
+	@@include('../project/blog/hero-gallery/hero-gallery.js');
+	// ==== AND BLOG =====================================================
+	
+
+	// ==== TV-SERIES =====================================================
+	@@include('../project/tv-series/tv-series.js');
+	// ==== AND TV-SERIES =====================================================
 
 
 
 });
+
+
+// === MAP ================================================================================================
+@@include('../project/common-blocks/map/map.js');
+// ===// MAP ================================================================================================
