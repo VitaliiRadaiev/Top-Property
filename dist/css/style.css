@@ -3417,6 +3417,8 @@ textarea.input {
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
+  text-align: center;
+  min-width: 12.7rem;
 }
 
 .card-video__btn.architecture {

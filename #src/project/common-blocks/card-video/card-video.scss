@@ -89,6 +89,8 @@
 		padding: 0.7em 2rem;
 		margin-right: 1rem;
 		transition: all .2s ease;
+		text-align: center;
+		min-width: 12.7rem;
 
 		@media (min-width: 992px) {
 			&:hover {
