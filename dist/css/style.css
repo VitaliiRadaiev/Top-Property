@@ -4420,6 +4420,8 @@ textarea.input {
 
 .professionals-category {
   margin-bottom: 18.6rem;
+  background: #F9F9FF;
+  padding: 1px 0;
 }
 
 .professionals-category.professionals-category-v2 .professionals-category__content-item {
