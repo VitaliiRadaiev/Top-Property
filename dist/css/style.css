@@ -2274,7 +2274,7 @@ textarea.input {
   height: 100%;
 }
 
-.hero-search__bg:before {
+.hero-search__bg--dark-layer:before {
   position: absolute;
   content: '';
   top: 0;
@@ -3417,6 +3417,36 @@ textarea.input {
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
+}
+
+.card-video__btn.architecture {
+  background: rgba(93, 180, 70, 0.2);
+  color: #5DB446;
+}
+
+.card-video__btn.interior {
+  background: rgba(44, 146, 188, 0.2);
+  color: #2C92BC;
+}
+
+.card-video__btn.property {
+  background: rgba(207, 127, 253, 0.2);
+  color: #CF7FFD;
+}
+
+.card-video__btn.trade-services {
+  background: rgba(255, 74, 56, 0.2);
+  color: #FF4A38;
+}
+
+.card-video__btn.pools {
+  background: rgba(61, 81, 254, 0.2);
+  color: #3D51FE;
+}
+
+.card-video__btn.solar-energy {
+  background: rgba(255, 123, 25, 0.2);
+  color: #FF7B19;
 }
 
 .card-video__duration {

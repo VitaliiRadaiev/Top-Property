@@ -95,6 +95,32 @@
 				opacity: 0.8;
 			}
 		}
+
+		&.architecture {
+			background: rgba(93, 180, 70, 0.2);
+			color: #5DB446;
+		}
+
+		&.interior {
+			background: rgba(44, 146, 188, 0.2);
+			color: #2C92BC;
+		}
+		&.property {
+			background: rgba(#CF7FFD, 0.2);
+			color: #CF7FFD;
+		}
+		&.trade-services {
+			background: rgba(#FF4A38, 0.2);
+			color: #FF4A38;
+		}
+		&.pools {
+			background: rgba(#3D51FE, 0.2);
+			color: #3D51FE;
+		}
+		&.solar-energy {
+			background: rgba(#FF7B19, 0.2);
+			color: #FF7B19;
+		}
 	}
 
 	&__duration {

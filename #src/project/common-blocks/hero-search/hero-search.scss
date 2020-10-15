@@ -8,16 +8,19 @@
 		width: 100%;
 		height: 100%;
 
-		&:before {
-			position: absolute;
-			content: '';
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background: rgba(18, 25, 88, 0.5);
-			z-index: 1;
+		&--dark-layer {
+			&:before {
+				position: absolute;
+				content: '';
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(18, 25, 88, 0.5);
+				z-index: 1;
+			}
 		}
+
 	}
 
 	&__body {
