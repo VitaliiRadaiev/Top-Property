@@ -68,6 +68,8 @@ $(document).ready(function() {
 
 	// ==== VIDEO DETAILS =====================================================
 	@@include('../project/video-details/video-details.js');
+	@@include('../project/video-details/video-gallery/video-gallery.js');
+	@@include('../project/video-details/video-gallery/video-gallery-youtube.js');
 	// ==== AND VIDEO DETAILS =====================================================
 	
 

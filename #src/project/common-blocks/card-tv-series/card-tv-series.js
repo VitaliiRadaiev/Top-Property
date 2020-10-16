@@ -21,32 +21,33 @@ function cardTvSeriesHandler() {
 			let video = card.querySelector('.card-tv-series__video');
 			let btn = card.querySelector('.card-tv-series__play-pause');
 
+			if(video) {
+				videoWrap.addEventListener('click', (e) => {
+					e.preventDefault();
+					togglePlayPause(video,btn);
+				});
 
-			videoWrap.addEventListener('click', (e) => {
-				e.preventDefault();
-				togglePlayPause(video,btn);
-			});
+				video.addEventListener('ended', () => {
+					video.pause();
+					btn.firstElementChild.className = 'icon-play3';
+					btn.firstElementChild.style.marginLeft = '0.4rem';
+				});
 
-			video.addEventListener('ended', () => {
-				video.pause();
-				btn.firstElementChild.className = 'icon-play3';
-				btn.firstElementChild.style.marginLeft = '0.4rem';
-			});
+				videoWrap.addEventListener('mousemove', (e) => { 
+					if(!video.paused) {
+						btn.style.opacity = '1';
+						
+							clearTimeout(timerId);
+							timerId = setTimeout(() => {
+								btn.style.opacity = '0';
+							}, 2000);
 
-			videoWrap.addEventListener('mousemove', (e) => { 
-				if(!video.paused) {
-					btn.style.opacity = '1';
-					
-						clearTimeout(timerId);
-						timerId = setTimeout(() => {
-							btn.style.opacity = '0';
-						}, 2000);
+					} else {
+						btn.style.opacity = '1';
+					}
 
-				} else {
-					btn.style.opacity = '1';
-				}
-
-			});
+				});
+			}	
 
 		})
 	}

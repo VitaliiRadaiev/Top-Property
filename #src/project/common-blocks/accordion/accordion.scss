@@ -86,4 +86,17 @@
 		margin: 0rem 0 0.9rem;
 		display: block;
 	}
+
+	&__logo-list {
+		margin-top: -1rem;
+		& > a {
+			display: inline-block;
+			width: 10rem;
+			margin-right: 3.5%;
+
+			& img {
+				width: 100%;
+			}
+		}
+	}
 }

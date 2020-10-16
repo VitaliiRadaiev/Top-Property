@@ -3577,6 +3577,20 @@ textarea.input {
   display: block;
 }
 
+.accordion__logo-list {
+  margin-top: -1rem;
+}
+
+.accordion__logo-list > a {
+  display: inline-block;
+  width: 10rem;
+  margin-right: 3.5%;
+}
+
+.accordion__logo-list > a img {
+  width: 100%;
+}
+
 .card-post {
   display: block;
   -webkit-transition: all .2s ease;
@@ -5253,6 +5267,10 @@ textarea.input {
   margin: 0.5rem 0 2rem;
 }
 
+.video-details__video-gallery {
+  margin-bottom: 4rem;
+}
+
 .video-details__hero-video-wrap {
   height: 0;
   overflow: hidden;
@@ -5336,6 +5354,176 @@ textarea.input {
 
 .video-details__related-video-title {
   margin-bottom: 5rem !important;
+}
+
+.video-gallery__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  border-radius: 0.9rem;
+  -webkit-box-shadow: 0px 1.2rem 2.7rem rgba(52, 79, 110, 0.1);
+          box-shadow: 0px 1.2rem 2.7rem rgba(52, 79, 110, 0.1);
+}
+
+.video-gallery__column--1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.video-gallery__column--2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(29rem + 10%);
+          flex: 0 0 calc(29rem + 10%);
+}
+
+.video-gallery__video-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  position: relative;
+}
+
+.video-gallery__video-wrap > video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.video-gallery__video-wrap > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.video-gallery__play-pause {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  background: #FF0000;
+  border-radius: 0.8rem;
+  width: 7.2rem;
+  height: 5.6rem;
+  font-size: 2.2rem;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.video-gallery__play-pause .icon-play3 {
+  margin-left: 0.4rem;
+}
+
+.video-gallery__title {
+  margin-bottom: 0.6rem !important;
+  padding-left: 1.8rem;
+  margin-top: 2rem;
+}
+
+.video-gallery__list {
+  height: 44.5rem;
+  overflow: auto;
+}
+
+.video-gallery__item {
+  cursor: pointer;
+  padding: 1.2rem 3rem 0.8rem 1.8rem;
+  background: #fff;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.video-gallery__item-column--1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin-right: 1.5rem;
+}
+
+.video-gallery__item-column--2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.video-gallery__item--img {
+  overflow: hidden;
+  border-radius: 0.4rem;
+  width: 8rem;
+  height: 5.8rem;
+  position: relative;
+}
+
+.video-gallery__item-play-pause.video-gallery__play-pause {
+  width: 2.9rem;
+  height: 1.8rem;
+  font-size: 1.2rem;
+  border-radius: 0.1rem;
+  background: #1E2E42;
+}
+
+.video-gallery__item-title {
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #000000;
+  margin-bottom: 0.5rem;
+  margin-top: 0.7rem;
+}
+
+.video-gallery__item-text {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #888888;
+}
+
+.video-gallery__sub-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 4rem;
+  color: #000000;
+  margin-top: 4.2rem;
+}
+
+.video-gallery__sub-text > p {
+  margin: 0 0 2.5rem;
 }
 
 .blog__hero-gallery {
@@ -6027,6 +6215,10 @@ textarea.input {
   margin: 7rem 0 18.5rem;
 }
 
+.tv-series__content-title {
+  margin-bottom: 3.5rem !important;
+}
+
 .tv-series__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6488,6 +6680,14 @@ textarea.input {
     background: rgba(255, 0, 0, 0.8);
   }
 
+  .video-gallery__play-pause:hover {
+    background: rgba(255, 0, 0, 0.8);
+  }
+
+  .video-gallery__item:hover {
+    background: #F3F5F9;
+  }
+
   .hero-gallery__main-slider .slick-arrow:hover {
     background: rgba(0, 0, 0, 0.4);
   }
@@ -6716,6 +6916,23 @@ textarea.input {
 
   .video-details__related-video {
     margin-bottom: 0;
+  }
+
+  .video-gallery__body {
+    display: block;
+    overflow: unset;
+  }
+
+  .video-gallery__column--1 {
+    margin-bottom: 2rem;
+    min-height: 46.9rem;
+    overflow: hidden;
+    border-radius: 0.9rem;
+  }
+
+  .video-gallery__list {
+    height: auto;
+    max-height: 44.5rem;
   }
 
   .blog__populer-post {
@@ -7133,6 +7350,15 @@ textarea.input {
     margin-bottom: 2rem !important;
   }
 
+  .video-gallery__column--1 {
+    min-height: 36.9rem;
+  }
+
+  .video-gallery__sub-text {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
   .blog__banner-wrap {
     min-height: 32rem;
   }
@@ -7278,6 +7504,10 @@ textarea.input {
   .sustainability__featured-post-title {
     text-align: center;
     margin-bottom: 2.7rem !important;
+  }
+
+  .tv-series__content-title {
+    margin-bottom: 2rem !important;
   }
 
   .tv-series__list {
@@ -7499,6 +7729,25 @@ textarea.input {
 
   .reviews-block__box-review-action > a {
     font-size: 1rem;
+  }
+
+  .video-gallery__column--1 {
+    min-height: 26.9rem;
+  }
+
+  .video-gallery__item {
+    padding: 1.2rem 1rem 0.8rem 1rem;
+  }
+
+  .video-gallery__item-title {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    margin-top: 0.5rem;
+  }
+
+  .video-gallery__item-text {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
 
   .blog__banner-title {

@@ -15,6 +15,14 @@
 	&__content {
 		margin: 7rem 0 18.5rem;
 
+		&-title {
+			margin-bottom: 3.5rem !important;
+
+			@media (max-width: $md3+px) {
+				margin-bottom: 2rem !important;
+			}
+		}
+
 		@media (max-width: 1023px) {
 			margin: 7rem 0 0rem;
 		}
