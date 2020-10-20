@@ -16,20 +16,14 @@
 		flex: 1 1 auto;
 		display: flex;
 		flex-direction: column;
+		
 		@media (max-width: 1023px) {
 			margin-bottom: 2rem;
-			min-height: 46.9rem;
 			overflow: hidden;
 			border-radius: 0.9rem;
+			display: block;
 		}
 
-		@media (max-width: $md3+px) {
-			min-height: 36.9rem;
-		}
-
-		@media (max-width: $md4+px) {
-			min-height: 26.9rem;
-		}
 
 	}
 	&__column--2 {
@@ -39,6 +33,19 @@
 	&__video-wrap {
 		flex: 1 1 auto;
 		position: relative;
+		width: 100%;
+
+		@media (max-width: 1023px) {
+			min-height: 46.9rem;
+		}
+
+		@media (max-width: $md3+px) {
+			min-height: 36.9rem;
+		}
+
+		@media (max-width: $md4+px) {
+			min-height: 26.9rem;
+		}
 
 		& > video {
 			position: absolute;
@@ -55,7 +62,6 @@
 			left: 0; 
 			width: 100%;
 			height: 100%;
-			object-fit: cover; 
 		}
 	}
 
