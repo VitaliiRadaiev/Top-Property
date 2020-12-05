@@ -29,7 +29,7 @@
 				width: 100%;
 			}
 
-			& .select-options {
+			& .select__options {
 				min-width: 100%;
 			}
 
@@ -43,7 +43,7 @@
 		}
 	}
 	&__column--2 {
-		flex: 0 0 calc(93.5% - 17rem);
+		flex: 0 0 calc(95.5% - 17rem);
 
 		@media (max-width: $md3+px) {
 			flex: 0 0 100%;
@@ -214,6 +214,10 @@
 			padding-left: 0.9rem;
 		}
 
+		& .select__title {
+			background: transparent;
+		}
+
 	}
 	&__select {
 		width: 16rem;
@@ -241,17 +245,21 @@
 
 }
 
+.select:not(.is-multiple) {
+    height: 3.5em;
+}
 
-@media (max-width: 1440px) {
-	.select:not(.is-multiple) {
-	    height: 3.5em;
+.gd-search-input-wrapper {
+	& .select__options {
+		min-width: 100%;
 	}
 }
 
 
 
 
-//<SELECT (sel+tab)>====================================================================================================
+
+/*//<SELECT (sel+tab)>====================================================================================================
 .select {
 	&:after {
 		display: none !important;
@@ -323,5 +331,103 @@
 		}
 	}
 }
-//</SELECT>====================================================================================================
+//</SELECT>====================================================================================================*/
 
+//<SELECT (sel+tab)>====================================================================================================
+.select {
+	position: relative;
+	&:after {
+		display: none !important;
+	}
+
+	@media(max-width: $md3+px) {
+		width: 100%;
+	}
+	// .select__item
+	&__item {
+		position: relative;
+	}
+	// .select__title
+	&__title {
+		z-index: 1;width: 100%;
+				height: 3.5rem;
+				position: relative;
+				background-color: #fff;
+				border: none;
+	}
+	// .select__value
+	&__value {
+		font-family: $secondFontFamily !important;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.6rem;
+		color:rgba(#000, 0.7);
+		line-height: 3.5rem; 
+		display: block;
+		overflow: hidden;
+		padding: 0 3.3rem 0 1.5rem;
+		white-space: nowrap;
+		text-transform: none;
+		text-overflow: ellipsis;
+		
+		&:before {
+			content: "";
+			display: inline-block;
+			transition: all 0.3s ease 0s;
+
+			position: absolute;top:0;
+					right: 0px;width:4rem;height:100%;
+					background: url('../img/icons/triangle.svg') center no-repeat;
+		}
+	}
+	&__input {
+		width: 100%;
+		background-color: transparent;
+		height: 100%;
+	}
+	// .select__options
+	&__options {
+		position: absolute;z-index: 10;
+		top: 4.4rem;
+		display: none;
+		min-width: 130%;
+		background-color: #fff;
+		border: 1px solid #dedede;
+		padding: 1rem 0px 1rem 0px;
+		overflow: auto;
+		max-height: 20rem; 
+
+		@media(max-width: $md3+px) {
+			min-width: 100%;
+		}
+	}
+	// .select__option
+	&__option {
+		font-family: $secondFontFamily;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.6rem;
+		line-height: 3rem;
+		color:rgba(#000, 0.7);
+		margin: 0px 0px 0px 0px;
+		padding-left: 2.1rem;
+		padding-right: 1rem;
+		&:last-child{margin:0px 0px 0px 0px;}
+		&:hover{
+			color: #000;
+			background: rgba(#000, 0.2);
+		}
+	}
+	&._active {
+		z-index: 5;
+		.select__value {
+			&:before {
+				//transform: rotate(-180deg);
+			}
+		}
+		.select__options {
+			display: block;
+		}
+	}
+}
+//</SELECT>====================================================================================================

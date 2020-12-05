@@ -56,9 +56,38 @@
 			font-size: 1.6rem;
 			line-height: 3rem;
 			color: #344F6E;
+			padding-left: 2.5rem;
+
+			& label {
+				cursor: pointer;
+				position: relative;
+
+				&:before {
+					position: absolute;
+					content: '';
+					width: 1.4rem;
+					height: 1.4rem;
+					top: 0.3rem;
+					border: 1px solid #a3a3a3;
+					left: -2.4rem
+				}
+			}
+
+			& input {
+				&:checked {
+					& + label {
+						&:before {
+							background: url(../img/icons/check2.svg) center no-repeat;
+							background-size: contain;
+						}
+					}
+					
+				}
+			}
 
 
 			&:before {
+				display: none;
 				width: 1.4rem;
 				height: 1.4rem;
 				top: 0.8rem;
@@ -67,25 +96,6 @@
 				@media (max-width: $md3+px) {
 					top: 0.4rem;
 				}
-			}
-
-			&:after {
-				position: absolute;
-				font-family: 'icomoon';
-				content: "\e909";
-				left: 0rem;
-				width: 1.4rem;
-				height: 1.4rem;
-				top: 0.1rem;
-				display: none;
-
-				@media (max-width: $md3+px) {
-					top: 0.1rem;
-				}
-			}
-
-			&.active:after {
-				display: block;
 			}
 
 			@media (max-width: $md3+px) {

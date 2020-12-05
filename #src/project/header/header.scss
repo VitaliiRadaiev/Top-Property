@@ -6,6 +6,7 @@
 	flex-direction: column;
 	transition: all .5s ease;
 	font-size: 1.6rem;
+	z-index: 200;
 
 	&.bg-transparent {
 		background: transparent;

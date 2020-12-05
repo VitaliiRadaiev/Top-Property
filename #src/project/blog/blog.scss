@@ -102,11 +102,7 @@
 	}
 
 	&__populer-post {
-		margin: 1.9rem 0 21rem;
-
-		@media (max-width: 1023px) {
-			margin: 1.9rem 0 0rem;
-		}
+		margin: 1.9rem 0 2rem;
 
 		&-title {
 			margin-bottom: 3rem !important;
@@ -114,6 +110,14 @@
 
 		&-pagination {
 			margin: 1rem 0 3rem;
+		}
+	}
+
+	&__pagination {
+		margin: 1.9rem 0 28rem;
+
+		@media (max-width: 1023px) {
+			margin: 1.9rem 0 0rem;
 		}
 	}
 }

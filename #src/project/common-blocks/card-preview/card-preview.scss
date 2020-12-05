@@ -143,6 +143,17 @@
 		font-size: 2rem;
 		line-height: 2.8rem;
 		margin-bottom: 1rem;
+
+		& > a {
+			color: $textColor;
+			transition: all .2s ease;
+
+			@media (min-width: 992px) {
+				&:hover {
+					color: rgba($textColor, 0.7);
+				}
+			}
+		}
 	}
 
 	&__text {
